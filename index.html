@@ -11,6 +11,7 @@
   <main class="board">
     <h1>Task Board</h1>
 
+
     <form id="task-form">
       <input id="task-input" type="text" placeholder="What needs to be done?">
       <select id="priority-select">
@@ -22,14 +23,17 @@
     </form>
     <p id="error" class="error" hidden></p>
 
+
     <div id="filters" class="filters">
-      <button type="button" data-filter="all" class="active">All</button>
-      <button type="button" data-filter="active">Active</button>
-      <button type="button" data-filter="done">Done</button>
+      <button type="button" data-filter="all" class="all_btn">All</button>
+      <button type="button" data-filter="active" class="active_btn">Active</button>
+      <button type="button" data-filter="done" class="done_btn">Done</button>
     </div>
+
 
     <ul id="task-list"></ul>
     <p id="empty" class="empty">No tasks yet. Add your first one!</p>
+
 
     <footer>
       <span><strong id="left">0</strong> tasks left</span>
